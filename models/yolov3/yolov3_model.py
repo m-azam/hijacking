@@ -1,4 +1,4 @@
-# Copyright 2018 Baidu Inc. All Rights Reserved
+	# Copyright 2018 Baidu Inc. All Rights Reserved
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -24,7 +24,7 @@ from keras import backend as K
 from keras.layers import Conv2D, Add,\
     ZeroPadding2D, UpSampling2D, Concatenate, MaxPooling2D
 from keras.layers.advanced_activations import LeakyReLU
-from keras.layers.normalization import BatchNormalization
+from tensorflow.keras.layers import BatchNormalization
 from keras.models import Model
 from keras.regularizers import l2
 

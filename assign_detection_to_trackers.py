@@ -39,6 +39,8 @@ def assign_detections_to_trackers(trackers_obj, detections_obj, iou_thrd=0.3):
     # Hungarian algorithm (also known as Munkres algorithm)
 
     matched_idx = linear_assignment(-IOU_mat)
+    
+    print("matched_idx")
 
     unmatched_trackers, unmatched_detections = [], []
     for t, trk in enumerate(trackers):

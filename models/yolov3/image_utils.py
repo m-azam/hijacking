@@ -2,8 +2,7 @@ from PIL import Image
 import numpy as np
 
 #Debug
-import tensorflow.compat.v1 as tf
-tf.disable_v2_behavior()
+import tensorflow as tf
 from tensorflow.image import ResizeMethod
 
 def letterbox_image(image, size):
